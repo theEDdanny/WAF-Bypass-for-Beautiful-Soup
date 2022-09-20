@@ -28,5 +28,15 @@ When you click on the correct packet move to the 'headers' tab. Under this tab y
 ![request_headers_page](https://user-images.githubusercontent.com/92893340/191373933-25df8b23-9fd7-48c7-8fe9-678f65de32d6.JPG)
 
 # Step four:
+Its time to write some python! Start by importing the requests module and your web scraping library of choice. I will be using BeautifulSoup.
+Next, build a dictionary and name it whatever you want. This dictionary is where we will be putting the request headers we just retreved in our browser. 
+
+The keys of this dictionary are going to be the dark grey color independent clauses before the colon in our request headers. 
+
+(these values will be the keys in your dictionary) 
+![Independent clauses](https://user-images.githubusercontent.com/92893340/191376504-b2ca4ee5-8841-4fab-818e-7fa36d8ef514.JPG)
+
+Little side note: Each Key and value in our dictionary is going to be a string datatype.
+
 
 
