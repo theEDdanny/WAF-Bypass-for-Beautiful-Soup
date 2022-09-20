@@ -1,4 +1,4 @@
-# Bypassing-Bot-Detection-Systems\
+# Bypassing-Bot-Detection-Systems
 
 When web scraping with packages BeautifulSoup and Selenium every programmer will be met with this WAF response similar to this.
 
