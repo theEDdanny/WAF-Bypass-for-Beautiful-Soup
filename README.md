@@ -89,8 +89,16 @@ offerup_headers = {
 Its finally time to send a request with our headers attached. 
 ```
 request = request.get(<'your url here'>, headers=incert name of dictionary with headers here)
-print(request.text)
+
+soup = BeautifulSoup(request.text, 'html.parser')
+
+for i in soup.find_all('a'):
+    print(i)
 ```
+As shown below I can now retreve HTML from the page! Mission complete!
+
+![returned links](https://user-images.githubusercontent.com/92893340/191571733-3d63a1ee-eb4a-461a-98b9-f819859e1eca.JPG)
+
 # Keep in mind 
 If you are going to be sending traffic that is out of the oridnary in any way be sure to cover your tracks. A large number of requests could get you IP blocked. If you are wanting to build a scalping bot or any script that will send lots of reqauests implement user-agent rotation and proxy rotation. 
 
