@@ -36,7 +36,7 @@ The keys of this dictionary are going to be the dark grey color independent clau
 (these values will be the keys in your dictionary) 
 ![Independent clauses](https://user-images.githubusercontent.com/92893340/191376504-b2ca4ee5-8841-4fab-818e-7fa36d8ef514.JPG)
 
-the values in our dictionary are goin to be represented my the values following the each Colon in our request headers.
+the values in our dictionary will be represented by the values following each Colon in our request headers.
 
 ![Dictionary values](https://user-images.githubusercontent.com/92893340/191377863-dcaaed9b-6e3a-4597-952e-6ab5679287d8.JPG)
 
@@ -88,7 +88,10 @@ offerup_headers = {
 # Step five
 Its finally time to send a request with our headers attached. 
 
-request = request.get('your url here', headers='incert name of dictionary with headers here')
+request = request.get(<'your url here'>, headers=<incert name of dictionary with headers here>)
+
+# Keep in mind 
+If you are going to be sending traffic that is out of the oridnary in any way be sure to cover your tracks. A large number of requests could get you IP blocked. If you are wanting to build a scalping bot or any script that will send lots of reqauests implement user-agent rotation and proxy rotation. 
 
 
 
