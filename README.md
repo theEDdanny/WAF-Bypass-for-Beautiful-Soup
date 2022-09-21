@@ -43,7 +43,7 @@ the values in our dictionary will be represented by the values following each Co
 Little side note: When building this dictionary make sure it is letter for letter! if one letter is wrong this will not work. I know from personal experence that building this dictionary is a tedious task. But the end result is rewarding!
 
 In the end it should look something like this
-
+```
 offerup_headers = {
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/'
                       'webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
@@ -84,7 +84,7 @@ offerup_headers = {
             'sec-ch-ua-mobile': '?1',
             'sec-ch-ua-platform': '"Android"',
         }
-
+```
 # Step five
 Its finally time to send a request with our headers attached. 
 
