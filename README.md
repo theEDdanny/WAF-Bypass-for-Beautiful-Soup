@@ -1,6 +1,6 @@
 # Bypassing-Bot-Detection-Systems
 
-When web scraping with packages BeautifulSoup and Selenium every programmer will be met with this WAF response similar to this.
+When web scraping with libraries BeautifulSoup and Selenium every programmer will be met with this WAF response similar to this.
 
 ![Cloudflare response](https://user-images.githubusercontent.com/92893340/191365938-33fc8827-fd66-4621-a32e-cca75e020696.JPG)
 
