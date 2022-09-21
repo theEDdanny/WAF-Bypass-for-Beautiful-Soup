@@ -6,7 +6,7 @@ When web scraping with libraries BeautifulSoup and Selenium every programmer wil
 
 But not to fear, because unless you're sending hundreds of requests a minute the solution is quite simple. For this example I will be using 'https://offerup.com/'. OfferUp doesnt want robots all over their site for obvious reasons, so please dont abuse this infromation. This post is solely for edicational purposes. 
 
-The WAF looks at request headers to authenticate a user. So why dont we try a replay attack with the headers we send legitimately via web browser?
+The WAF looks at many different kinds of data authenticate a user. In the case of robot detection It will focus on the authenticity of the request headers. So why dont we try a replay attack with the headers we send legitimately via web browser?
 
 (P.S.) I personally recomend using BeautifulSoup over Selenium. I have found Selenuim much harder to create custom content. But this is a personal opnion. Feel free to use whatever library fits your personal needs.
 
