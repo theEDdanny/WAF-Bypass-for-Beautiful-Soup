@@ -42,7 +42,7 @@ the values in our dictionary will be represented by the values following each Co
 
 Little side note: When building this dictionary make sure it is letter for letter! if one letter is wrong this will not work. I know from personal experence that building this dictionary is a tedious task. But the end result is rewarding!
 
-In the end it should look something like this
+In the end it should look something like this (These values vary for each client)
 ```
 offerup_headers = {
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/'
@@ -87,9 +87,10 @@ offerup_headers = {
 ```
 # Step five
 Its finally time to send a request with our headers attached. 
-
-request = request.get(<'your url here'>, headers=<incert name of dictionary with headers here>)
-
+```
+request = request.get(<'your url here'>, headers=incert name of dictionary with headers here)
+print(request.text)
+```
 # Keep in mind 
 If you are going to be sending traffic that is out of the oridnary in any way be sure to cover your tracks. A large number of requests could get you IP blocked. If you are wanting to build a scalping bot or any script that will send lots of reqauests implement user-agent rotation and proxy rotation. 
 
