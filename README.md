@@ -1,14 +1,14 @@
 # Bypassing-Bot-Detection-Systems
 
-When web scraping with libraries BeautifulSoup and Selenium every programmer will be met with this WAF response similar to this.
+When web scraping with libraries such as BeautifulSoup every programmer will be met with a WAF response similar to this.
 
 ![Cloudflare response](https://user-images.githubusercontent.com/92893340/191365938-33fc8827-fd66-4621-a32e-cca75e020696.JPG)
 
 But not to fear, because unless you're sending hundreds of requests a minute the solution is quite simple. For this example I will be using 'https://offerup.com/'. OfferUp doesnt want robots all over their site for obvious reasons, so please dont abuse this infromation. This post is solely for edicational purposes. 
 
-The WAF looks at many different kinds of data authenticate a user. In the case of robot detection It will focus on the authenticity of the request headers. So why dont we try a replay attack with the headers we send legitimately via web browser?
+The WAF looks at many different kinds of data authenticate a user. In the case of robot detection It will focus on the authenticity of the request headers. So why dont we try a replay attack with the payload being headers we send legitimately via web browser?
 
-(P.S.) I personally recomend using BeautifulSoup over Selenium. I have found Selenuim much harder to create custom content. But this is a personal opnion. Feel free to use whatever library fits your personal needs.
+(tip I didnt know lol) Selenium and BeautifulSoup work differently in the way they are used. BeautifulSoup can retreve HTML from a page but it canno't interact with the site via javascript. Selenium is the best option for interacting with a websites javascript. 
 
 # Step one: 
 Head to the site you want to scrape. Wait for it to load and press f12 (or right click and to to inspect).
