@@ -23,12 +23,12 @@ Hit 'Ctrl + r' to reload the page and click of the packet with the domain name o
 ![packets](https://user-images.githubusercontent.com/92893340/191372797-feb28247-7a0f-40dc-96af-9640e9ffccb3.JPG)
 
 # Step Three:
-When you click on the correct packet move to the 'headers' tab. Under this tab you should see 'Request Headers'. These specs are going to be the payload in our replay attack. 
+When you click on the correct packet move to the 'headers' tab. Under this tab you should see 'Request Headers'. These specs are going to be spoofed and perform as the payload in our replay attack. 
 
 ![request_headers_page](https://user-images.githubusercontent.com/92893340/191373933-25df8b23-9fd7-48c7-8fe9-678f65de32d6.JPG)
 
 # Step four:
-Its time to write some python! Start by importing the requests module and your web scraping library of choice. I will be using BeautifulSoup.
+Its time to write some python! Start by importing the requests module and BeautifulSoup.
 Next, build a dictionary and name it whatever you want. This dictionary is where we will be putting the request headers we just retreved in our browser. 
 
 The keys of this dictionary are going to be the dark grey color independent clauses before the colon in our request headers. 
